@@ -483,7 +483,6 @@ img{
     color: #ffffff;
 }
 
-
 .subscription-form {
     display: flex;
     gap: 24px;
@@ -502,6 +501,7 @@ img{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #ffffff;
+    
 }
 
 
@@ -596,7 +596,7 @@ img{
 
 
 .form-group {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 .form-label {
     font-size: 12px;
@@ -676,6 +676,45 @@ img{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    fill: transparent; 
     margin-right: 8px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+input[type="checkbox"]:checked + .checkbox-label .checkbox-custom {
+    background-color: #404bbf;
+    border: none;
+}
+
+input[type="checkbox"]:checked + .checkbox-label .checkbox-icon {
+    fill: #f4f4fd;
+}
+
+
+.privacy-link {
+    color: #4d5ae5;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+.submit-button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover {
+    background-color: #3c4bc9;
 }
