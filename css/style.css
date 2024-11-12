@@ -599,6 +599,7 @@ img{
 }
 .input-wrapper {
     position: relative;
+    margin-bottom: 16px;
 }
 .form-input {
     width: 100%;
@@ -675,6 +676,7 @@ img{
 
 input[type="checkbox"]:checked + .checkbox-label .checkbox-custom {
     background-color: #404bbf;
+    fill: var(--text-color);
     border: none;
 }
 
