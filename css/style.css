@@ -588,6 +588,9 @@ img{
 
 .form-group {
     margin-bottom: 8px;
+    
+}
+.form-group-two {
     margin-bottom: 16px;
 }
 .form-label {
@@ -662,7 +665,7 @@ img{
     cursor: pointer;
 }
 .checkbox-custom {
-    display: inline-flex;
+    display: inline-flex !important;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
